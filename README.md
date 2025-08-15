@@ -2,6 +2,7 @@
 
 <img width="1883" height="909" alt="image" src="https://github.com/user-attachments/assets/1bbd71f6-4b7a-4ae5-8312-5242d05fe890" />
 <img width="1495" height="899" alt="image" src="https://github.com/user-attachments/assets/4812c5af-26af-47e3-bad8-2b2192407173" />
+<img width="1482" height="904" alt="image" src="https://github.com/user-attachments/assets/9ba7517d-da6f-413e-aada-094d0be28bac" />
 <img width="1506" height="899" alt="image" src="https://github.com/user-attachments/assets/7936a27a-b8d3-4da3-8c86-3f66440aae8e" />
 
 **URL**: https://corefans.xyz (very soon)
