@@ -1,5 +1,9 @@
 # CoreFans, a OnlyFans-style SocialFi platform
 
+<img width="1883" height="909" alt="image" src="https://github.com/user-attachments/assets/1bbd71f6-4b7a-4ae5-8312-5242d05fe890" />
+<img width="1495" height="899" alt="image" src="https://github.com/user-attachments/assets/4812c5af-26af-47e3-bad8-2b2192407173" />
+<img width="1506" height="899" alt="image" src="https://github.com/user-attachments/assets/7936a27a-b8d3-4da3-8c86-3f66440aae8e" />
+
 **URL**: https://corefans.xyz (very soon)
 
 CoreFans, a OnlyFans-style SocialFi platform where each user has a personalized token or Access Pass NFT associated with their account. These tokens can be traded, and Access Pass NFTs grant access to content creators, that can include both real individuals and virtual AI avatars (like VTubers), managed by teams.
