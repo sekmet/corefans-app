@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+env:
+  FOUNDRY_PROFILE: ci
+
+jobs:
+  check:
+    strategy:
+      fail-fast: true
+
+    name: Foundry project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Show Forge version
+        run: |
+          forge --version
+
+      - name: Run Forge fmt
+        run: |
+          forge fmt --check
+        id: fmt
+
+      - name: Run Forge build
+        run: |
+          forge build --sizes
+        id: build
+
+      - name: Check EIP-170 size (SubscriptionManager)
+        run: |
+          cd contracts
+          LIMIT=24576
+          HEX=$(forge inspect src/SubscriptionManager.sol:SubscriptionManager deployedBytecode)
+          LEN=${#HEX}
+          BYTES=$(( (LEN-2)/2 ))
+          echo "SubscriptionManager runtime size: $BYTES bytes"
+          if [ "$BYTES" -gt "$LIMIT" ]; then
+            echo "EIP-170 limit exceeded: $BYTES > $LIMIT"
+            exit 1
+          fi
+        id: size
+
+      - name: Run Forge tests
+        run: |
+          forge test -vvv
+        id: test
