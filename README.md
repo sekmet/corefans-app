@@ -38,34 +38,6 @@ The live streaming functionality represents a significant technical requirement.
 
 The notification system displays sophisticated state management with different notification types tracked separately. Messages show a count of ten unread items, while streams indicate one active item. This granular notification tracking requires a flexible event system that can categorize and aggregate different types of user interactions.
 
-## Database Schema Considerations
-
-### User and Profile Tables
-
-The user profile system requires tables that efficiently store and retrieve user information along with content statistics. The profile displays comprehensive metrics including total posts, media counts by type, and engagement statistics. This suggests denormalized data storage for performance, with background processes maintaining count accuracy.
-
-The online status tracking and recent activity indicators require timestamp fields and potentially Redis-based session management for real-time presence detection. The join date display indicates standard datetime handling with proper timezone consideration for global user bases.
-
-### Content and Interaction Models
-
-The polling functionality reveals complex data relationships where each poll contains multiple options with real-time vote tracking. This requires normalized poll structures with separate tables for poll options and user votes, along with efficient aggregation queries for percentage calculations.
-
-The engagement system with likes, comments, and tips requires flexible interaction tables that can handle different interaction types while maintaining referential integrity. The tip functionality specifically requires integration with financial transaction records and user wallet or payment method management.
-
-## Frontend Component Architecture
-
-### Navigation and Layout Components
-
-The sidebar navigation demonstrates component composition where each navigation item manages its own state while participating in global navigation context. The notification badges require real-time updates, suggesting WebSocket or Server-Sent Events integration for pushing count updates to connected clients.
-
-The layout system accommodates both static content display and dynamic real-time features. The main content area adapts to different content types while maintaining consistent interaction patterns across posts, polls, and media content.
-
-### Content Display and Interaction
-
-The post component system handles diverse content types including text, polls, and media attachments. The polling interface specifically requires client-side state management for vote submission and real-time result updates. This suggests a reactive component architecture that can handle optimistic updates while maintaining data consistency.
-
-The engagement buttons for likes, comments, and tips require careful state management to prevent duplicate interactions while providing immediate user feedback. The tip functionality particularly needs integration with payment processing workflows and success/failure state handling.
-
 ## API Design and Backend Services
 
 ### RESTful Endpoints and Real-time Integration
