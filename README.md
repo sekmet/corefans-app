@@ -1,10 +1,5 @@
 # CoreFans, a OnlyFans-style SocialFi platform
 
-<img width="1883" height="909" alt="image" src="https://github.com/user-attachments/assets/1bbd71f6-4b7a-4ae5-8312-5242d05fe890" />
-<img width="1495" height="899" alt="image" src="https://github.com/user-attachments/assets/4812c5af-26af-47e3-bad8-2b2192407173" />
-<img width="1482" height="904" alt="image" src="https://github.com/user-attachments/assets/9ba7517d-da6f-413e-aada-094d0be28bac" />
-<img width="1506" height="899" alt="image" src="https://github.com/user-attachments/assets/7936a27a-b8d3-4da3-8c86-3f66440aae8e" />
-
 **URL**: https://corefans.xyz (very soon)
 
 CoreFans, a OnlyFans-style SocialFi platform where each user has a personalized token or Access Pass NFT associated with their account. These tokens can be traded, and Access Pass NFTs grant access to content creators, that can include both real individuals and virtual AI avatars (like VTubers), managed by teams.
@@ -16,6 +11,11 @@ CoreFans, a OnlyFans-style SocialFi platform where each user has a personalized 
 - Virtual AI Creators: Integrate AI-driven virtual avatars (similar to VTubers) that are managed and operated by content creation teams.
 - Access Pass NFT Trading: Allow users to trade or sell Access Pass NFTs to each other, creating a secondary market around content access.
 - Fan Engagement: Fans can interact with virtual or real content creators in personalized ways based on their Access Pass NFT ownership.
+
+<img width="1883" height="909" alt="image" src="https://github.com/user-attachments/assets/1bbd71f6-4b7a-4ae5-8312-5242d05fe890" />
+<img width="1495" height="899" alt="image" src="https://github.com/user-attachments/assets/4812c5af-26af-47e3-bad8-2b2192407173" />
+<img width="1482" height="904" alt="image" src="https://github.com/user-attachments/assets/9ba7517d-da6f-413e-aada-094d0be28bac" />
+<img width="1506" height="899" alt="image" src="https://github.com/user-attachments/assets/7936a27a-b8d3-4da3-8c86-3f66440aae8e" />
 
 ## Architecture
 
