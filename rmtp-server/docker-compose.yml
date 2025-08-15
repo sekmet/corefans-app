@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  nginx-rtmp:
+    image: tiangolo/nginx-rtmp
+    ports:
+      - "1935:1935"
+      - "8090:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/hls:/var/hls
+    command: nginx -g 'daemon off;'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6389:6379"
+    volumes:
+      - redis_data:/data
+
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - "5442:5432"
+    environment:
+      POSTGRES_DB: streaming
+      POSTGRES_USER: streaming_user
+      POSTGRES_PASSWORD: streaming_pass
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  redis_data:
+  postgres_data:

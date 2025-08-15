@@ -27,3 +27,5 @@ docs/
 
 # Dotenv file
 .env
+
+.windsurf
